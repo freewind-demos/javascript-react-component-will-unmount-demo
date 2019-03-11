@@ -1,15 +1,24 @@
 import React, {Component} from 'react';
 
 class Hello extends Component {
-    render() {
-        return <div ref='root'>
-            <h1>Hello Freewind</h1>
-        </div>;
-    }
+  state = {
+    count: 0
+  }
 
-    componentDidMount() {
-        console.log(this.refs.root);
-    }
+  render() {
+    return <div ref='root'>
+      <h1>Count: {this.state.count}</h1>
+      <button onClick={() => this.setState({count: this.state.count + 1})}>Increase</button>
+    </div>;
+  }
+
+  componentDidMount() {
+    console.log("> componentDidMount")
+  }
+
+  componentWillUnmount() {
+    console.log("> componentWillUnmount")
+  }
 }
 
 export default Hello;

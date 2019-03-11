@@ -1,11 +1,7 @@
-JavaScript React Get DOM in ComponentDidMount Demo
+JavaScript React ComponentWillUnmount Demo
 ==================================================
-
-Key: Use `ref` and `refs`.
 
 ```
 npm install
-npm start
+npm run demo
 ```
-
-Then visit <http://localhost:8080>.

@@ -1,9 +1,9 @@
-import Hello from './hello.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Unmount from './unmount';
 
 ReactDOM.render(
-  <Hello />,
+  <Unmount/>,
   document.getElementById("content")
 );
 
